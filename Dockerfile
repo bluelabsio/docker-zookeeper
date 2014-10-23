@@ -6,6 +6,7 @@ RUN wget -q -O - http://apache.mirrors.pair.com/zookeeper/zookeeper-3.4.6/zookee
 RUN mkdir -p /tmp/zookeeper
 
 ENV ZK_CONF /opt/zookeeper-3.4.6/conf/zoo_sample.cfg
+ENV ZK_LOG_CONF /opt/zookeeper-3.4.6/conf/log4j.properties
 
 ENV ZK_SERVER_ID 1
 
